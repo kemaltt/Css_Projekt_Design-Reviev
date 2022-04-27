@@ -59,21 +59,20 @@ header nav {
     padding: 2vh 0;
 }
 
-header nav button {
+header nav input {
     font-family: Graphik-Medium;
     font-size: 1.2rem;
-    padding: 5px 30px;
+    padding: 8px 30px;
     color: #2B2C2E;
     background-color: #fff;
     width: 150%;
 }
 
-header nav button:hover {
+header nav input:hover {
     background-color: #2B2C2E;
     color: #fff;
+    transition: ease-in 0.3s;
 }
-
-header nav div h2 {}
 
 header nav ul {
     display: flex;
@@ -89,6 +88,10 @@ header nav ul a {
     font-family: Graphik-Regular;
     color: #27282A;
     font-size: 1.2rem;
+}
+
+header nav ul a:hover {
+    border-bottom: #2B2C2E solid 2px;
 }
 
 header p {
@@ -119,8 +122,8 @@ main section:nth-of-type(1) {
 
 main section:nth-of-type(1)>p {
     width: 60%;
-    font-size: 1.2rem;
-    padding: 0 9% 0 0;
+    font-size: 1.1rem;
+    padding: 0 7% 0 0;
     color: #27282A;
     font-family: Graphik-Medium;
 }
@@ -221,6 +224,8 @@ main section:nth-of-type(3) article div {
 
 main section:nth-of-type(4) {
     text-align: center;
+    border-bottom: #9FA2A7 1px solid;
+    margin: 0 8%;
 }
 
 main section:nth-of-type(4) h2 {
@@ -229,7 +234,7 @@ main section:nth-of-type(4) h2 {
     color: #27282A;
 }
 
-main section:nth-of-type(4) p {
+main section:nth-of-type(4) div p {
     color: #9FA2A7;
     font-size: 1.10rem;
     padding: 0 1%;
@@ -237,16 +242,20 @@ main section:nth-of-type(4) p {
 }
 
 main section:nth-of-type(4) div {
-    padding: 0 30% 15vh 30%;
+    padding: 0 25% 10vh 25%;
+}
+
+main section:nth-of-type(4) img {
+    width: 100%;
 }
 
 main section:nth-of-type(4) article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4% 10vh 8%;
+    padding: 0 8%;
     position: relative;
-    bottom: 70px;
+    bottom: 65px;
 }
 
 main section:nth-of-type(4) article img {
@@ -255,7 +264,42 @@ main section:nth-of-type(4) article img {
 
 main section:nth-of-type(4) article p {
     color: #9FA2A7;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0 0 0 18%;
+    line-height: 30px;
+    font-family: Graphik-Medium;
+}
+
+
+/* ========================
+           footer
+============================*/
+
+footer {
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+footer h2 {
+    font-size: 4rem;
+    margin: 6vh 0;
+    color: #2B2C2E;
+}
+
+footer img {
+    width: 90px;
+}
+
+footer p {
+    color: #9FA2A7;
     font-size: 1.10rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2B2C2E;
+    font-family: Graphik-Medium;
 }
 
 @media only screen and (max-width: 600px) {}
